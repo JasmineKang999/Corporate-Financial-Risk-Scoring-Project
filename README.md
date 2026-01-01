@@ -29,14 +29,14 @@ Compute financial ratios that reflect solvency, profitability, and cash flow qua
  * Profitability Ratios: gross_margin, net_profit_ratio, operating_profit_ratio, profit_to_total_profit
  * Cash Flow Ratios: cash_profit_ratio, cashflow_to_debt, ocf_ratio, ocf_growth
 * **3.Risk Scoring**:
-   ***Standardize indicators using z-score
-   ***Adjust the direction: higher values indicate higher risk for some indicators, lower for others
-   ***Combine all indicators to calculate a final risk_score (0–100)
-   ***Each individual indicator also produces a zscore for interpretability
+ * Standardize indicators using z-score
+ * Adjust the direction: higher values indicate higher risk for some indicators, lower for others
+ * Combine all indicators to calculate a final risk_score (0–100)
+ * Each individual indicator also produces a zscore for interpretability
 * **4.Output**:
 CSV table containing:
-company_name, stock_code, risk_score
-Individual z-scores for all indicators (leverage_z, cash_to_debt_z, etc.)
+ * company_name, stock_code, risk_score
+ * Individual z-scores for all indicators (leverage_z, cash_to_debt_z, etc.)
 
 ## Notes
 The risk score is relative among the companies in the dataset. 
