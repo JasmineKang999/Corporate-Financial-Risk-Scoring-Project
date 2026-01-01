@@ -39,6 +39,6 @@ CSV table containing:
  * Individual z-scores for all indicators (leverage_z, cash_to_debt_z, etc.)
 
 ## Notes
-The risk score is relative among the companies in the dataset. 
-A high risk_score does not necessarily imply imminent failure but indicates comparatively higher financial risk.
+* The risk score is relative among the companies in the dataset. 
+* A high risk_score does not necessarily imply imminent failure but indicates comparatively higher financial risk.
 
