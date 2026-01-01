@@ -33,7 +33,7 @@ Standardize indicators using z-score
 Adjust the direction: higher values indicate higher risk for some indicators, lower for others
 Combine all indicators to calculate a final risk_score (0–100)
 Each individual indicator also produces a zscore for interpretability
-* **Output**:
+* **4.Output**:
 CSV table containing:
 company_name, stock_code, risk_score
 Individual z-scores for all indicators (leverage_z, cash_to_debt_z, etc.)
