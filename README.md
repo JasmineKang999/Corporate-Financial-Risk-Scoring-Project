@@ -16,11 +16,11 @@ The data used in this project is for demonstration purposes (e.g., 2023 fiscal y
 
 ## Methodology
 The project follows a multi-step pipeline:
-  **1.Data Cleaning and Standardization**:
+* **1.Data Cleaning and Standardization**:
 Select relevant columns from the three statements
 Rename columns to English for consistency
 Handle missing values and infinities
-  **2.Feature Engineering**:
+* **2.Feature Engineering**:
 Compute financial ratios that reflect solvency, profitability, and cash flow quality:
  * Leverage: total_liabilities / total_assets
  * Cash-to-Debt Ratio: cash / total_liabilities
@@ -28,12 +28,12 @@ Compute financial ratios that reflect solvency, profitability, and cash flow qua
  * Operating Liability Ratio: (accounts_payable + advance_receipts) / total_liabilities
  * Profitability Ratios: gross_margin, net_profit_ratio, operating_profit_ratio, profit_to_total_profit
  * Cash Flow Ratios: cash_profit_ratio, cashflow_to_debt, ocf_ratio, ocf_growth
-  **3.Risk Scoring**:
- * Standardize indicators using z-score
- * Adjust the direction: higher values indicate higher risk for some indicators, lower for others
- * Combine all indicators to calculate a final risk_score (0–100)
- * Each individual indicator also produces a zscore for interpretability
-  **4.Output**:
+* **3.Risk Scoring**:
+   ***Standardize indicators using z-score
+   ***Adjust the direction: higher values indicate higher risk for some indicators, lower for others
+   ***Combine all indicators to calculate a final risk_score (0–100)
+   ***Each individual indicator also produces a zscore for interpretability
+* **4.Output**:
 CSV table containing:
 company_name, stock_code, risk_score
 Individual z-scores for all indicators (leverage_z, cash_to_debt_z, etc.)
